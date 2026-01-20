@@ -6,18 +6,18 @@ namespace Tyuiu.KarnaukhovDA.Sprint3.Task1.V14.Lib
         public double GetSumSeries(double value, int startValue, int stopValue)
         {
             double sum = 0;
-            double cosT = Math.Cos(value); // cos(0.7)
+            double cosT = Math.Cos(value); 
 
             int k = startValue;
             while (k <= stopValue)
             {
-                // Формула: (t^k + 1/(k+1)) * cos(t)
+                
                 double term = Math.Pow(value, k) + (1.0 / (k + 1));
                 sum += term * cosT;
                 k++;
             }
 
-            return sum;
+            return Math.Round(sum, 3);
         }
     }
 }
