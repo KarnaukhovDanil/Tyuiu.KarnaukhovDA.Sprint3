@@ -20,7 +20,7 @@ namespace Tyuiu.KarnaukhovDA.Sprint3.Task7.V14.Lib
                 double denominator = Math.Sin(x) + 1;
 
                 
-                if (Math.Abs(denominator) < 0.0000001 || x == 0)
+                if (Math.Abs(denominator) < 0.0000001)
                 {
                     y = 0;
                 }
